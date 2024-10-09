@@ -68,24 +68,30 @@ a {
     text-decoration: none;
 }
 
-div{
+div {
     width: 500px;
     height: 200px;
 }
 
-.container1{
+.container1 {
     background-color: red;
 }
 
-.container2{
+.container2 {
     background-color: blue;
 }
-.container3{
+.container3 {
     background-color: yellow;
 }
 
-@media (max-width: 600px){
-    .container2{
+@media (max-width: 600px) {
+    .container2 {
         display: none;
+    }
+}
+
+@media (min-width: 601px) { 
+    div {
+        width: 100vh;
     }
 }
