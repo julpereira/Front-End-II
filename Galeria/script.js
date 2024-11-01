@@ -1,4 +1,4 @@
-const miniaturas = document.querySelector('.miniatura');
+const miniaturas = document.querySelectorAll('.miniatura');
 const imgAmpliada = document.querySelector('#imgAmpliada');
 
 miniaturas.forEach(miniatura => {
