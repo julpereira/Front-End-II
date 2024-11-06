@@ -32,7 +32,7 @@ const nav = document.querySelector('nav');
 const ul = document.querySelector('ul');
 
 header.style.backgroundColor = '#071D41';
-header.style.fontFamily = 'Arial';
+header.style.fontFamily = 'Arial'
 ul.style.height = '40px';
 ul.style.display = 'flex';
 ul.style.justifyContent = 'center';
