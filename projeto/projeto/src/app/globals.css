@@ -40,3 +40,9 @@ a {
     color-scheme: dark;
   }
 }
+
+h1{
+  color: yellow;
+  font-weight: bold;
+  text-align: center;
+}
