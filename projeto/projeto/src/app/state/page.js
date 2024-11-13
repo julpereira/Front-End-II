@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function State(){
     const [conteudo, setConteudo] = useState('Bom dia!')
     const [name, setName] = useState('')
-    const [showDiv, seshowDiv] = useState(true)
+    const [showDiv, setShowDiv] = useState(true)
     const controlarParagrafo = () =>{
         setConteudo('Boa tarde!')
         console.log('conteudo:' +conteudo)
@@ -18,12 +18,13 @@ export default function State(){
         <div>
             {/* <p>{conteudo}</p>
             <button onClick={controlarParagrafo}>Mudar</button> */}
-            <button>{showDiv?'Esconder':'Mostrar'}</button>
-            {showDiv &&(
-            <div>
-                <p>Nome: {name}</p>
-                <input type="text" onChange={controlarInput} />
-            </div>
+            <button onClick={() => { setShowDiv(!showDiv) }}>{showDiv? 'Esconder':'Mostrar'}</button>
+            {showDiv &&
+            (
+                <div>
+                    <p>Nome: {name}</p>
+                    <input type="text" onChange={controlarInput} />
+                </div>
             )
         }   
         </div>
