@@ -12,9 +12,10 @@ export default function Header() {
             showMenu &&
             <nav>
                 <ul>
-                    <li><Link href='/home'></Link>Home</li>
-                    <li><Link href='/sobre'></Link>Sobre</li>
-                    <li><Link href='/contato'></Link>Contato</li>
+                    <li><Link href="/inicio">Início</Link></li>
+                    <li><Link href="/sobre">Sobre</Link></li>
+                    <li><Link href="/contato">Contato</Link></li>
+                    <li><Link href="/listas" >Listas</Link></li>
                 </ul>
             </nav>
             }
