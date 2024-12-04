@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import {useState} from "react";
 
+
 export default function Header() {
     const [showMenu, setShowMenu] = useState (false)
     return(
@@ -10,7 +11,7 @@ export default function Header() {
             <button onClick={()=>setShowMenu(!showMenu)}>Clique</button>
             {
             showMenu &&
-            <nav>
+            <nav>   
                 <ul>
                     <li><Link href="/inicio">Início</Link></li>
                     <li><Link href="/sobre">Sobre</Link></li>
