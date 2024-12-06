@@ -38,7 +38,7 @@ export default function Listas() {
             {racasObj.map((racaObj) => (
                 <div key={racaObj.id}>
                     <h3>{racaObj.id}</h3>
-                    <Image src='' alt={racaObj.raca} width={200} height={200}></Image>
+                    {/* <Image src='' alt={racaObj.raca} width={200} height={200}></Image> */}
                     <p>{racaObj.raca}</p>
                 </div>
             ))}
