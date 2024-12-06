@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./lista.module.css"
 
 export default function Listas() {
    const racas = ["Vira-lata", "Pit-bull", "Shitzu", "Labrador"]
@@ -26,14 +27,14 @@ export default function Listas() {
         <div style={{display: 'flex', flexDirection: 'column', alignItems:'center'}}>
             <h1>Listas</h1>
             
-            <h2>Lista Comum</h2>
+            <h2 className={styles.paragrafo}>Lista Comum</h2>
             <ul>
                 {racas.map((raca, i)=> (
                 <li key={i}>{i+1} - {raca}</li>
                 ))}
             </ul>
             <div>
-            <h2>Lista de objetos</h2>
+            <h2 className={styles.obj}>Lista de objetos</h2>
             {racasObj.map((racaObj) => (
                 <div key={racaObj.id}>
                     <h3>{racaObj.id}</h3>
