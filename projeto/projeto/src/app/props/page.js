@@ -32,7 +32,7 @@ export default function Props() {
             <h1>Props</h1>;
             <div>
                 {dogs.map((dog) => (
-                    <Card classname = {styles.card}
+                    <Card
                         key= {dog.id} 
                         nome = {dog.nome} 
                         raca = {dog.raca} 
