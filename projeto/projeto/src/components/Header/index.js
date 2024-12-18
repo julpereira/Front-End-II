@@ -6,6 +6,7 @@ import {useState} from "react";
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState (false)
+
     return(
         <header>
             <button onClick={()=>setShowMenu(!showMenu)}>Clique</button>
@@ -19,6 +20,7 @@ export default function Header() {
                     <li><Link href="/listas">Listas</Link></li>
                     <li><Link href="/props">Props</Link></li>
                     <li><Link href="/filter">Filter</Link></li>
+                    <li><Link href="/efeitos">Efeitos Colaterais</Link></li>
                 </ul>
             </nav>
             }
